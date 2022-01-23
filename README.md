@@ -33,7 +33,7 @@ Após o final do desenvolvimento, crie um repositório público do GIT, hospede 
 
 Clonar o desafio
 
-git clone  https://github.com/raphamendoncabhz/api-desafio.git desafio-raphael
+git clone https://github.com/raphamendoncabhz/app-desafio-api.git desafio-raphael
 
 cd desafio-raphael
 
