@@ -42,8 +42,6 @@ Copiar arquivo .env
 
 composer install
 
-php artisan key:generate
-
 docker-compose up -d
 
 ## MIGRAÇÕES 
@@ -54,6 +52,7 @@ docker-compose up -d
 	Linux: 		docker exec -it desafio-laravel-app bash
 
 	Execute o seguinte comando dentro do container:
+    
 	php artisan migrate:fresh --seed
 
 
