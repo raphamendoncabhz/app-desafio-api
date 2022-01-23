@@ -46,40 +46,38 @@ php artisan key:generate
 
 docker-compose up -d
 
-
-Opcional (O banco já esta carregado com alguns registros)
+## MIGRAÇÕES 
 	Realizar as migrações
 	Acesse o container com o seguinte comando: 
 
-	Windows: 	winpty docker exec -it shouts-laravel-app bash
-	Linux: 		docker exec -it shouts-laravel-app bash
+	Windows: 	winpty docker exec -it desafio-laravel-app bash
+	Linux: 		docker exec -it desafio-laravel-app bash
 
 	Execute o seguinte comando dentro do container:
 	php artisan migrate:fresh --seed
-	(Elimina todas as tabelas e as constroi novamente alimentando com a Factorie do laravel.)
 
 
 
 ## ENDPOINTS
 
-Rota com o nome da API
-Método: GET
-http://localhost/api
+Rota com o nome da API</br>
+Método: GET</br>
+http://localhost/api</br>
 
 
-Listagem dos usuários 
-Método: GET
-http://localhost/api/users
-Rota para recuperar dados para o login. (Não requer autorização)
+Listagem dos usuários </br>
+Método: GET</br>
+http://localhost/api/users</br>
+Rota para recuperar dados para o login. (Não requer autorização)</br>
 
 
-Rota de login para obtenção do token
-Método: POST
-HEADER: 
-       Content Type  : application/json
-       Accept        : application/json
+Rota de login para obtenção do token</br>
+Método: POST</br>
+HEADER: </br>
+       Content Type  : application/json</br>
+       Accept        : application/json</br>
 
-Usuário admin:
+Usuário admin:</br>
 {
        "email": "admin@admin.com",
        "password": "admin"
@@ -87,14 +85,14 @@ Usuário admin:
 
 
 
-Rota para cadastro de clientes
-Método: POST
-HEADER: 
-       Content Type  : application/json
+Rota para cadastro de clientes</br>
+Método: POST</br>
+HEADER: </br>
+       Content Type  : application/json</br>
        Accept        : application/json
-TOKEN: (tocken obtido no login) informar na aba beaver       
+TOKEN: (tocken obtido no login) informar na aba beaver   </br>    
 
-http://localhost/api/v1/clientes 
+http://localhost/api/v1/clientes </br>
 {
 
        "name": "RAPHAEL OLIVEIRA",
@@ -104,12 +102,12 @@ http://localhost/api/v1/clientes
 
 
 
-Rota para Update de clientes
-Método: PUT
-HEADER: 
-       Content Type  : application/json
-       Accept        : application/json
-TOKEN: (tocken obtido no login) informar na aba beaver  
+Rota para Update de clientes</br>
+Método: PUT</br>
+HEADER: </br>
+       Content Type  : application/json</br>
+       Accept        : application/json</br>
+TOKEN: (tocken obtido no login) informar na aba beaver  </br>
 http://localhost/api/v1/clientes/2
 {
 
@@ -120,47 +118,45 @@ http://localhost/api/v1/clientes/2
 
 
 
-Rota para Exclusão de um cliente
-Método: DELETE
-HEADER: 
-       Content Type  : application/json
-       Accept        : application/json
-TOKEN: (tocken obtido no login) informar na aba beaver  
-http://localhost/api/v1/clientes/2 
-Selecione o Id do cliente
+Rota para Exclusão de um cliente</br>
+Método: DELETE</br>
+HEADER: </br>
+       Content Type  : application/json</br>
+       Accept        : application/json</br>
+TOKEN: (tocken obtido no login) informar na aba beaver  </br>
+http://localhost/api/v1/clientes/2 </br>
+Selecione o Id do cliente</br>
 
 
 
-Rota para exibição de um cliente específico
-http://localhost/api/v1/clientes/2
-(Alterar o id de cliente caso necessário)
-Método: GET
-HEADER: 
-       Content Type  : application/json
-       Accept        : application/json
-TOKEN: (tocken obtido no login) informar na aba beaver  
+Rota para exibição de um cliente específico</br>
+http://localhost/api/v1/clientes/2</br>
+(Alterar o id de cliente caso necessário)</br>
+Método: GET</br>
+HEADER: </br>
+       Content Type  : application/json</br>
+       Accept        : application/json</br>
+TOKEN: (tocken obtido no login) informar na aba beaver  </br>
 
 
-Rota para Listagem dos clientes
-http://localhost/api/v1/consulta/final-placa/5
-Informar o numero final da placa
-Método: GET
-HEADER: 
-       Content Type  : application/json
-       Accept        : application/json
-TOKEN: (tocken obtido no login) informar na aba beaver  
+Rota para Listagem dos clientes</br>
+http://localhost/api/v1/consulta/final-placa/5</br>
+Informar o numero final da placa</br>
+Método: GET</br>
+HEADER: </br>
+       Content Type  : application/json</br>
+       Accept        : application/json</br>
+TOKEN: (tocken obtido no login) informar na aba beaver  </br>
 
 
 
-Rota para Listagem dos clientes
-http://localhost/api/v1/clientes
-Método: GET
-HEADER: 
-       Content Type  : application/json
-       Accept        : application/json
-TOKEN: (tocken obtido no login) informar na aba beaver  
-
-
+Rota para Listagem dos clientes</br>
+http://localhost/api/v1/clientes</br>
+Método: GET</br>
+HEADER: </br>
+       Content Type  : application/json</br>
+       Accept        : application/json</br>
+TOKEN: (tocken obtido no login) informar na aba beaver  </br>
 
 
 
