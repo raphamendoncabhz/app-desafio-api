@@ -89,14 +89,14 @@ Método: POST</br>
 HEADER: </br>
        Content Type  : application/json</br>
        Accept        : application/json
-TOKEN: (tocken obtido no login) informar na aba beaver   </br>    
+TOKEN: (token obtido no login) informar na aba bearer   </br>    
 
 http://localhost/api/v1/clientes </br>
 {
 
        "name": "RAPHAEL OLIVEIRA",
-       "phone": "(31) 9 8694-0042",
-       "cpf": "05890466674"
+       "phone": "(31) 9 0000-0042",
+       "cpf": "0000000"
 }
 
 
@@ -106,7 +106,7 @@ Método: PUT</br>
 HEADER: </br>
        Content Type  : application/json</br>
        Accept        : application/json</br>
-TOKEN: (tocken obtido no login) informar na aba beaver  </br>
+TOKEN: (token obtido no login) informar na aba bearer  </br>
 http://localhost/api/v1/clientes/2
 {
 
@@ -122,7 +122,7 @@ Método: DELETE</br>
 HEADER: </br>
        Content Type  : application/json</br>
        Accept        : application/json</br>
-TOKEN: (tocken obtido no login) informar na aba beaver  </br>
+TOKEN: (token obtido no login) informar na aba bearer  </br>
 http://localhost/api/v1/clientes/2 </br>
 Selecione o Id do cliente</br>
 
@@ -135,7 +135,7 @@ Método: GET</br>
 HEADER: </br>
        Content Type  : application/json</br>
        Accept        : application/json</br>
-TOKEN: (tocken obtido no login) informar na aba beaver  </br>
+TOKEN: (token obtido no login) informar na aba bearer  </br>
 
 
 Rota para Listagem dos clientes</br>
@@ -145,7 +145,7 @@ Método: GET</br>
 HEADER: </br>
        Content Type  : application/json</br>
        Accept        : application/json</br>
-TOKEN: (tocken obtido no login) informar na aba beaver  </br>
+TOKEN: (token obtido no login) informar na aba bearer  </br>
 
 
 
@@ -155,7 +155,7 @@ Método: GET</br>
 HEADER: </br>
        Content Type  : application/json</br>
        Accept        : application/json</br>
-TOKEN: (tocken obtido no login) informar na aba beaver  </br>
+TOKEN: (token obtido no login) informar na aba bearer  </br>
 
 
 
