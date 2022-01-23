@@ -111,8 +111,8 @@ http://localhost/api/v1/clientes/2
 {
 
        "name": "RAPHAEL MENDONCA DE OLIVEIRA",
-       "phone": "(31) 9 8694-0042",
-       "cpf": "05890466674"
+       "phone": "(31) 9 0000-0000",
+       "cpf": "0000000000"
 }
 
 
